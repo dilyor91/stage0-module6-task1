@@ -41,10 +41,10 @@ public class Animal {
     public String getDescription() {
         String fur = "no";
         String paw = "paw";
-        if(numberOfPaws>1)
+        if(this.numberOfPaws>1)
             paw="paws";
-        if(hasFur)
+        if(this.hasFur)
             fur ="a";
-        return "This animal is mostly "+this.getColor()+"."+" It has "+this.getNumberOfPaws()+" "+ paw+" and "+fur+" fur.";
+        return "This animal is mostly "+getColor()+"."+" It has "+getNumberOfPaws()+" "+ paw+" and "+fur+" fur.";
     }
 }
